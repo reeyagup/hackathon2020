@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "hackathon"
+    }
+  },
+  "defaultProject": "hackathon",
+  "cli": {
+    "analytics": "a4071b03-5e01-40f4-b535-4bef799856d7"
+  }
 }
