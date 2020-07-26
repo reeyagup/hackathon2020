@@ -24,9 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css",
-              "styles.scss"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
             ],
             "scripts": []
           },
@@ -61,7 +59,11 @@
             }
           }
         },
+        "styleExt": "scss",
         "serve": {
+          "host": "www.majorleaguemajors.tech",
+          "sslKey": "server.key",
+          "sslCert": "server.crt",
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "hackathon:build"
@@ -90,6 +92,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []

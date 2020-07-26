@@ -4,8 +4,8 @@ import { AppComponent } from './app.component';
 import { MajorDropdownComponent } from './major-dropdown/major-dropdown.component';
 import { AppRoutingModule } from '../app/app-routing.module';
 import { FormsModule } from '@angular/forms';
-
-
+import {MatCardModule} from '@angular/material/card';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -16,7 +16,7 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, FormsModule
+    AppRoutingModule, FormsModule, MatCardModule, BrowserAnimationsModule
     
   ],
   exports: [],

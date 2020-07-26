@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MAJORS } from '../majorList';
-import { language } from '../language';
-import { FormsModule } from '@angular/forms';
 import {languages} from '../majorArray';
+
 
 @Component({
   selector: 'app-major-dropdown',
@@ -31,7 +30,7 @@ export class MajorDropdownComponent implements OnInit {
       this.description = this.languageList[i].description;
     }
 
-    
+
 
   }
 

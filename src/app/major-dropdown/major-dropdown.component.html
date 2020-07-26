@@ -1,7 +1,11 @@
+<mat-card-title>	
 <div class= "center">
-<h1>What's your Major?</h1>
+<h1>WHAT'S YOUR MAJOR?</h1>
 </div>
+</mat-card-title>	
 
+
+<mat-card>
 <div class= "center">
         <select [(ngModel)]= "selectedMajor" >
             <option *ngFor="let major of majorsList" [value] = "major">
@@ -15,13 +19,7 @@
         
 </div>
 
-<br>
-<br>
 
-<div class="center">
- {{this.description}}
-</div>
-
-
-
-
+<mat-card>
+     {{this.description}}
+</mat-card>
