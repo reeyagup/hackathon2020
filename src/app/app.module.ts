@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MajorDropdownComponent } from './major-dropdown/major-dropdown.component';
 import { AppRoutingModule } from '../app/app-routing.module';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -14,7 +16,7 @@ import { AppRoutingModule } from '../app/app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, FormsModule
     
   ],
   exports: [],

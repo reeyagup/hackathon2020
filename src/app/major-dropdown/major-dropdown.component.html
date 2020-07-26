@@ -3,18 +3,25 @@
 </div>
 
 <div class= "center">
-    <select> 
-        <option
-             *ngFor="let major of majors">
-                 <div>
-                    <h4>{{major.name}}</h4>
-                  </div>
-        </option>
-    </select>
-</div>
-<div class= "center">
-    <button class="button" type="submit">Submit</button>
+        <select [(ngModel)]= "selectedMajor" >
+            <option *ngFor="let major of majorsList" [value] = "major">
+                {{major}}
+            </option>
+        </select>
+        <br>
+        <br>
+
+        <button (click)="onSelectedMajor(selectedMajor)">Submit</button>
+        
 </div>
 
-<!--<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
--->
+<br>
+<br>
+
+<div class="center">
+ {{this.description}}
+</div>
+
+
+
+

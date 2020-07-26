@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MAJORS } from '../majorList';
-import { major } from '../major';
-
+import { language } from '../language';
+import { FormsModule } from '@angular/forms';
+import {languages} from '../majorArray';
 
 @Component({
   selector: 'app-major-dropdown',
@@ -12,28 +13,26 @@ import { major } from '../major';
 
 export class MajorDropdownComponent implements OnInit {
 
-  majors = MAJORS;
+  selectedMajor: string;
+  majorsList = MAJORS;
+  languageList = languages;
+  description: string;
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
-  filterForMajor(majorObject: major) {
-   for(let i = 0; i < majorObject.languages.length; i ++) {
-     console.log(majorObject.languages[i].name + ' ' + majorObject.languages[i].description);
-   }    
+  onSelectedMajor(name: string) {
+
+    for(let i = 0; i < this.languageList.length; i ++)
+    if(name == this.languageList[i].major) {
+      console.log(this.languageList[i]);
+      this.description = this.languageList[i].description;
+    }
+
+    
+
   }
-
-
- /* 
-<!--  filterForeCasts(filterVal: any) {
-        if (filterVal == "0")
-            this.forecasts = this.cacheForecasts;
-        else
-        this.forecasts = this.cacheForecasts.filter((item) => item.summary == filterVal);
-    }-->*/
-
-  
 
 }

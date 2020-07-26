@@ -1,4 +1,4 @@
 export interface language {
-    name: string;
+    major: string;
     description: string;
 }

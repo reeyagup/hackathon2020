@@ -5,7 +5,7 @@ import { MajorDropdownComponent } from './major-dropdown/major-dropdown.componen
 
 
 const routes: Routes = [
- // { path: 'coding-languages', component: LanguageInfoComponent }
+
 ];
 
 @NgModule({
