@@ -1,3 +1,8 @@
+# Directions
+Open in VSC and in terminal write ng serve -o
+if there are still errors write npm install and run ng serve -o again.
+It should open on localhost:4200
+
 # Hackathon
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
